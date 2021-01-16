@@ -189,6 +189,8 @@ Error message and password prompt
 
 <li>Audiomaster IV</li>
 
+<li>Checksums</li>
+
 <li>DAW</li>
 
 <li>Fireball info</li>
@@ -9639,7 +9641,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210104110423642" list="Octamed [[Ardour keyboard shortcuts]] Ardour renoise GettingStarted" modified="20210104110617603" title="$:/StoryList">
+<div list="Checksums GettingStarted" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9687,15 +9689,15 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;360&quot;
+            &quot;text&quot;: &quot;1920&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;720&quot;
+            &quot;text&quot;: &quot;1080&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
-            &quot;text&quot;: &quot;en-GB&quot;
+            &quot;text&quot;: &quot;en-US&quot;
         }
     }
 }</pre>
@@ -9947,6 +9949,55 @@ Markers
 </div>
 <div created="20201211092326767" modified="20201216204528025" tags="amiga software [[sample editor]] [[Audiomaster IV]]" title="Audiomaster IV">
 <pre>Excellent Amiga sample editor.</pre>
+</div>
+<div created="20210116155715629" modified="20210116155918745" tags="sha256 PGP SIG ISO [[MX Linux]]" title="Checksums" type="text/plain">
+<pre>Notes on how to check:
+
+    ISO signature
+    ISO sha256
+
+
+
+---------------------------
+
+    Signature
+
+
+Steps:
+1. Download ISO, .sig and sha256 in same folder
+
+the next steps are from this link
+https://mxlinux.org/wiki/system/signed-iso-files/
+
+2. download key 
+gpg --keyserver hkp://keys.gnupg.net --recv-keys B9B6375C 0679EE98 892C32F1
+
+3. run command to check signature
+gpg --verify MX-19.2_x64.iso.sig
+
+-------------------------------
+
+    SHA256
+
+
+Steps:
+
+    Download sha256 in same folder as above
+     run command to create hash
+
+
+sha256sum Downloads/MX-19.2_x64.iso
+
+    read contents of downloaded sha256 file
+
+
+less Downloads/MX-19.2_x64.iso.sha256
+
+    Compare output of both commands
+
+
+7cf6d7dafe8200e7553f3548121eac077e87f891b5cdb939c0b677b9d7720e4c
+7cf6d7dafe8200e7553f3548121eac077e87f891b5cdb939c0b677b9d7720e4c</pre>
 </div>
 <div created="20201217001259038" modified="20210104110624862" tags="DAW audio software renoise Ardour Octamed [[jeskola buzz]]" title="DAW">
 <pre>Digital [[audio]] workstation</pre>
