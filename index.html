@@ -10088,31 +10088,25 @@ PCs:
 
 ===============================</pre>
 </div>
-<div created="20210116162032608" modified="20210116162201740" tags="u-he Tyrell renoise VST audio DAW linux [[MX Linux]] software tracker" title="u-he" type="text/plain">
+<div created="20210116162032608" modified="20210116162833487" tags="u-he Tyrell renoise VST audio DAW linux [[MX Linux]] software tracker" title="u-he" type="text/plain">
 <pre>Renoise VST
-
 --------------------------
-u-he Tyrell
-
+u-he Tyrell - links:
 https://www.amazona.de/freeware-synth-tyrell-n6-v3-03/
 https://u-he.com/products/tyrelln6/
 https://tutorials.renoise.com/wiki/Linux_FAQ
 
 --------------------------------
+u-he high level steps:
 
-U-he high level steps:
-
-    install using install.sh (from u-he download)
+1. install using install.sh (from u-he download)
     (this creates ~/.vst and ~/.u-he folders)
     (the ~/.vst folder contains a link to the actual plugin in  ~/.u-he )
 
-
-
+2. then the below commands
     echo VST_PATH=/home/c-user/.vst:\$VST_PATH &gt;&gt; ~/.bash_profile
     echo export VST_PATH &gt;&gt; ~/.bash_profile
     source .bash_profile
-
-
 
 # w-user
 TyrellN6's data were installed to /home/w-user/.u-he/TyrellN6
@@ -10122,47 +10116,37 @@ The VST has been installed in: /home/w-user/.vst/u-he
 # Renoise
 (w-user)
 - launch Renoise
-
-    edit - preferences - Plug/Misc
-    put check in &quot;Enable VST Plugins&quot;
-    (click Rescan) - optional
-    (not working yet)
-
-
+-- edit - preferences - Plug/Misc
+-- put check in &quot;Enable VST Plugins&quot;
+-- (click Rescan) - optional
+(not working yet)
 
 # Ardour
 (w-user)
-
-    launch Ardour
-    edit - preferences - Plugins - VST
-    Linux VST Path - click edit
-    click &quot;add&quot; - choose VST PATH
-    (not working yet)
-
-
+- launch Ardour
+-- edit - preferences - Plugins - VST
+-- Linux VST Path - click edit
+-- click &quot;add&quot; - choose VST PATH
+(not working yet)
 
 # Ardour
 (c-user)
-
-    launch Ardour
-    edit - preferences - Plugins - VST
-    Linux VST Path - click edit
-    click &quot;add&quot; - choose VST PATH
-    Plugins - click &quot;Scan for plugins&quot;
-    Create new MIDI track
-    choose no instrument
-    Go to mixer view
-    Right click on empty track
-    New Plugin - By Category - LinuxVST - Tyrell
+- launch Ardour
+-- edit - preferences - Plugins - VST
+-- Linux VST Path - click edit
+-- click &quot;add&quot; - choose VST PATH
+-- Plugins - click &quot;Scan for plugins&quot;
+-- Create new MIDI track
+-- choose no instrument
+-- Go to mixer view
+-- Right click on empty track
+-- New Plugin - By Category - LinuxVST - Tyrell
     (note: this works - I got the GUI up - but I had a general audio issue; so didn't get any sound out of the synth!!)
     (note: general audio issue solved. But still no audio from the darn VST! :-D )
     (track = &quot;u-he_test&quot; Sunday 30th August 2020)
 
-
-
-
 ----------------------------------------------
-VST lists
+VST lists - URLs:
 http://linux-sound.org/linux-vst-plugins.html
 https://forum.renoise.com/t/list-of-freeware-and-commercial-linux-vst-i/47242
 https://www.kvraudio.com/plugins/linux/vst-plugins/vst3-plugins/audio-units/aax-plugins/rack-extensions/instruments/free/most-popular
@@ -10170,11 +10154,13 @@ https://www.kvraudio.com/plugins/linux/vst-plugins/vst3-plugins/audio-units/aax-
 -------------------
 amsynth (from Synaptic)
 
+installs to this location:
 /usr/lib/x86_64-linux-gnu/vst
 
-    echo VST_PATH=usr/lib/x86_64-linux-gnu/vst:\$VST_PATH &gt;&gt; ~/.bash_profile
-    echo export VST_PATH &gt;&gt; ~/.bash_profile
-    source .bash_profile</pre>
+run these commands
+1. echo VST_PATH=usr/lib/x86_64-linux-gnu/vst:\$VST_PATH &gt;&gt; ~/.bash_profile
+2. echo export VST_PATH &gt;&gt; ~/.bash_profile
+3. source .bash_profile</pre>
 </div>
 
 
