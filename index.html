@@ -209,6 +209,8 @@ Error message and password prompt
 
 <li>e-books - Linux by Apress</li>
 
+<li>ffmpeg extract audio from video</li>
+
 <li>Fireball info</li>
 
 <li>Hydrogen</li>
@@ -9692,7 +9694,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210305230458973" list="[[Tiddly Wiki - Learning]] $:/ControlPanel GettingStarted" modified="20210305230539818" title="$:/StoryList">
+<div created="20210305230458973" list="[[ffmpeg extract audio from video]] [[Tiddly Wiki - Learning]] $:/ControlPanel GettingStarted" modified="20210305230539818" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210205233953353" modified="20210205235330976" title="$:/temp/advancedsearch">
@@ -10075,6 +10077,20 @@ pro sqlserver on linux.epub
 using and administering linux_volume1.epub
 using and administering linux_volume2.epub
 using and administering linux_volume3.epub</pre>
+</div>
+<div created="20210305231353808" modified="20210305231620427" tags="" title="ffmpeg extract audio from video" type="text/vnd.tiddlywiki">
+<pre>link&lt;br&gt;
+https://stackoverflow.com/questions/9913032/how-can-i-extract-audio-from-video-with-ffmpeg
+
+STEPS:&lt;br&gt;
+check audio stream inside video
+ffprobe 2020-06-07_11-51-39.flv
+
+(output)&lt;br&gt;
+Stream #0:1: Audio: &lt;b&gt;aac&lt;/b&gt; (LC), 44100 Hz, stereo, fltp, 160 kb/s
+
+extract audio&lt;br&gt;
+ffmpeg -i 2020-06-07_11-51-39.flv -vn -acodec copy &lt;b&gt;jerry.aac&lt;/b&gt;</pre>
 </div>
 <div created="20201213120612309" modified="20201213213132293" tags="meteors astronomy geminids" title="Fireball info">
 <pre>https://www.amsmeteors.org/fireballs/faqf/#top
