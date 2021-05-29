@@ -203,6 +203,8 @@ Error message and password prompt
 
 <li>Audiomaster IV</li>
 
+<li>Bendy text with SVGs</li>
+
 <li>Checksums</li>
 
 <li>DAW</li>
@@ -9696,7 +9698,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210529100222009" list="[[Tiddly Wiki - Learning]] [[ffmpeg - convert aac to WAV]] [[ffmpeg extract audio from video]] GettingStarted" modified="20210529102012321" title="$:/StoryList">
+<div created="20210529100222009" list="[[Bendy text with SVGs]] [[Tiddly Wiki - Learning]] [[ffmpeg - convert aac to WAV]] [[ffmpeg extract audio from video]] GettingStarted" modified="20210529102012321" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210205233953353" modified="20210205235330976" title="$:/temp/advancedsearch">
@@ -9760,7 +9762,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201208224235399" modified="20210529101445561" title="$:/temp/NewTagName">
+<div created="20201208224235399" modified="20210529102652256" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div created="20210205233932503" modified="20210305230605097" title="$:/temp/search">
@@ -10010,6 +10012,31 @@ Markers
 </div>
 <div created="20201211092326767" modified="20201216204528025" tags="amiga software [[sample editor]] [[Audiomaster IV]]" title="Audiomaster IV">
 <pre>Excellent Amiga sample editor.</pre>
+</div>
+<div created="20210529102616143" modified="20210529102848990" tags="SVG" title="Bendy text with SVGs" type="text/vnd.tiddlywiki">
+<pre>\define textOnPath(text)
+$$$.svg
+&lt;svg width=&quot;100%&quot; height=&quot;100%&quot; viewBox=&quot;0 0 1000 300&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; style=&quot;background:white;&quot;&gt;
+&lt;defs&gt;
+&lt;path id=&quot;MyPath&quot; d=&quot;M 100 200 C 200 100 300   0 400 100 C 500 200 600 300 700 200 C 800 100 900 100 900 100&quot;/&gt;
+&lt;/defs&gt;
+&lt;use xlink:href=&quot;#MyPath&quot; fill=&quot;none&quot; stroke=&quot;#ddd&quot;/&gt;
+&lt;text font-family=&quot;'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif&quot; font-size=&quot;42.5&quot;&gt;
+&lt;textPath xlink:href=&quot;#MyPath&quot;&gt;
+$text$
+&lt;/textPath&gt;
+&lt;/text&gt;
+&lt;/svg&gt;
+$$$
+\end
+This demo shows how to use SVG to render transcluded text along a path. Enter some text in the textbox below to try it out; [[view the source|Making curved text with SVG]] to see how it is done.
+
+&lt;$edit-text tiddler=&quot;$:/CurvedText&quot; tag=&quot;input&quot; placeholder=&quot;Type text here&quot; default=&quot;&quot;/&gt;
+
+&lt;$macrocall $name=&quot;textOnPath&quot; text={{$:/CurvedText}}/&gt;
+
+Code copied from:&lt;br&gt;
+https://tiddlywiki.com/#Making%20curved%20text%20with%20SVG</pre>
 </div>
 <div created="20210116155715629" modified="20210116160307173" tags="sha256 PGP SIG ISO [[MX Linux]]" title="Checksums" type="text/plain">
 <pre>Notes on how to check:
