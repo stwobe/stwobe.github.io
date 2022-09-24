@@ -211,6 +211,8 @@ Error message and password prompt
 
 <li>DAW</li>
 
+<li>DrumGizmo</li>
+
 <li>e-books - Linux by Apress</li>
 
 <li>ffmpeg - convert aac to WAV</li>
@@ -9681,8 +9683,8 @@ Error message and password prompt
 <div created="20201217234813393" modified="20201220142711008" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20210205234335591" modified="20220908223320212" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20210205234335591" modified="20220924132954318" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20210205234002194" modified="20210205234701124" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
@@ -9705,7 +9707,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20220908223810029" list="[[Richard Burton]] GettingStarted" modified="20220908223810029" title="$:/StoryList">
+<div created="20220924132427683" list="DrumGizmo $:/ControlPanel u-he GettingStarted" modified="20220924132740014" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210205233953353" modified="20210205235330976" title="$:/temp/advancedsearch">
@@ -9769,11 +9771,11 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20201208224235399" modified="20220828205142912" title="$:/temp/NewTagName">
+<div created="20201208224235399" modified="20220924132822399" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
-<div created="20210205233932503" modified="20220908221052607" title="$:/temp/search">
-<pre></pre>
+<div created="20210205233932503" modified="20220924132425759" title="$:/temp/search">
+<pre>Vst</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -10084,6 +10086,67 @@ less Downloads/MX-19.2_x64.iso.sha256
 </div>
 <div created="20201217001259038" modified="20220908221158419" tags="DAW audio software [[Renoise (can delete this one)]] Ardour Octamed [[jeskola buzz]]" title="DAW">
 <pre>Digital [[audio]] workstation</pre>
+</div>
+<div created="20220924132743386" modified="20220924132956834" tags="drumgizmo VST Ardour" title="DrumGizmo">
+<pre>DrumGizmo
+
+Software Needed:
+qjackctl
+patchage
+ardour
+Drumgizmo (LV2) [Synaptic]
+Drumgizmo drumkit (folder) 
+
+STEPS to get it running:
+Add DrumGizmo as a MIDI track
+Go to GUI (of DrumGizmo in Ardour)
+Load drumkit file (MXL)
+Load midimap (XML)
+
+NOTES:
+website = https://drumgizmo.org/wiki/doku.php
+installed location (automatic)= /usr/lib/lv2/drumgizmo.lv2
+MuldjordKit = 2.4GB
+
+STEPS to create a beat:
+
+
+
+STEPS to get each piece of kit on a separate track in Ardour
+https://libremusicproduction.com/tutorials/setting-and-using-drumgizmo-ardour.html (old)
+# my try is using
+sh**ty kit
+4 mono, 2 stereo
+
+# choon
+/home/cr****/Music/01_audio/01_projects/02_ardour/drummer_separate/drummer_separate.ardour
+
+MY STEPS
+load MIDI track with DrumGizmo
+(choose Flexible I/O when creating track)
+load Shitty Kit XML files * 2 
+disconnect DG track from Master (stop the output going to Master)
+add 4 Mono Audio busses
+add 2 Stereo audio busses
+Bypass Panner
+window - audio connections
+join the tracks (tracks to busses)
+success!
+
+
+https://linuxmusicians.com/viewtopic.php?t=20531 - Template for Ardour and drumgizmo (good)
+https://musical-artifacts.com/artifacts/662 - Create Drumgizmo Tracks - Lua script - Ardour v3 + midnam
+https://drumgizmo.org/wiki/doku.php?id=videos#tutorials
+https://www.reddit.com/r/linuxaudio/comments/bwaza4/piano_rolldrumgizmoardour_how_can_i_program_a/
+https://discourse.ardour.org/t/light-weight-drumkits-for-drumgizmo/104212
+https://discourse.ardour.org/t/plugins-gui-drumgizmo-specifically/90141
+https://www.facebook.com/drumgizmo/posts/a-new-video-from-me-about-trying-out-the-new-drumgizmo-crocell-kit-on-a-new-proj/1220875614683168/ 
+links to 
+https://www.youtube.com/watch?v=hXDCTmcBmLg (Test driving the Drumgizmo Crocell Kit Pt I)
+
+
+
+</pre>
 </div>
 <div created="20210117182650081" modified="20210117183009053" tags="[[Humble Bundle]] e-books linux audio Docker Kubernetes Programming" title="e-books - Linux by Apress" type="text/plain">
 <pre>humble_bundle_2021.txt&lt;br&gt;
@@ -10426,8 +10489,7 @@ TECHNIQUES
             ▪ Add effects to S01 track</pre>
 </div>
 <div created="20220828205036990" modified="20220908223922654" title="Richard Burton" type="text/vnd.tiddlywiki">
-<pre>
-```
+<pre>```
 Tunes I've done with samples of him in:
 ```
 
