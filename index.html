@@ -10089,62 +10089,67 @@ less Downloads/MX-19.2_x64.iso.sha256
 <div created="20201217001259038" modified="20220908221158419" tags="DAW audio software [[Renoise (can delete this one)]] Ardour Octamed [[jeskola buzz]]" title="DAW">
 <pre>Digital [[audio]] workstation</pre>
 </div>
-<div created="20220924132743386" modified="20220924142204187" tags="drumgizmo VST Ardour" title="DrumGizmo">
-<pre>DrumGizmo
+<div created="20220924132743386" modified="20220924160028330" tags="drumgizmo VST Ardour Linux audio" title="DrumGizmo" type="text/vnd.tiddlywiki">
+<pre>Software Needed:
 
-Software Needed:
-qjackctl
-patchage
-ardour
-Drumgizmo (LV2) [Synaptic]
-Drumgizmo drumkit (folder) 
+* qjackctl
+* patchage
+* ardour
+* Drumgizmo (LV2) [Synaptic]
+* Drumgizmo drumkit (folder) 
+
 
 STEPS to get it running:
-Add DrumGizmo as a MIDI track
-Go to GUI (of DrumGizmo in Ardour)
-Load drumkit file (MXL)
-Load midimap (XML)
+
+* Add DrumGizmo as a MIDI track
+* Go to GUI (of DrumGizmo in Ardour)
+* Load drumkit file (MXL)
+* Load midimap (XML)
 
 NOTES:
-website = https://drumgizmo.org/wiki/doku.php
-installed location (automatic)= /usr/lib/lv2/drumgizmo.lv2
-MuldjordKit = 2.4GB
+
+* website = https://drumgizmo.org/wiki/doku.php
+* installed location (automatic)= /usr/lib/lv2/drumgizmo.lv2
+* MuldjordKit = 2.4GB
 
 STEPS to create a beat:
 
-
-
 STEPS to get each piece of kit on a separate track in Ardour
-https://libremusicproduction.com/tutorials/setting-and-using-drumgizmo-ardour.html (old)
-# my try is using
-sh**ty kit
-4 mono, 2 stereo
 
-# choon
-/home/cr****/Music/01_audio/01_projects/02_ardour/drummer_separate/drummer_separate.ardour
+https://libremusicproduction.com/tutorials/setting-and-using-drumgizmo-ardour.html (old)
+
+My try is using:
+
+* sh**ty kit
+* 4 mono, 2 stereo
+
+choon location : /home/cr****/Music/01_audio/01_projects/02_ardour/drummer_separate/drummer_separate.ardour
 
 MY STEPS
-load MIDI track with DrumGizmo
-(choose Flexible I/O when creating track)
-load Sh**ty Kit XML files * 2 
-disconnect DG track from Master (stop the output going to Master)
-add 4 Mono Audio busses
-add 2 Stereo audio busses
-Bypass Panner
-window - audio connections
-join the tracks (tracks to busses)
-success!
+
+* load MIDI track with DrumGizmo
+* (choose Flexible I/O when creating track)
+* load Sh**ty Kit XML files * 2 
+* disconnect DG track from Master (stop the output going to Master)
+* add 4 Mono Audio busses
+* add 2 Stereo audio busses
+* Bypass Panner
+* window - audio connections
+* join the tracks (tracks to busses)
+* success!
 
 
-https://linuxmusicians.com/viewtopic.php?t=20531 - Template for Ardour and drumgizmo (good)
-https://musical-artifacts.com/artifacts/662 - Create Drumgizmo Tracks - Lua script - Ardour v3 + midnam
-https://drumgizmo.org/wiki/doku.php?id=videos#tutorials
-https://www.reddit.com/r/linuxaudio/comments/bwaza4/piano_rolldrumgizmoardour_how_can_i_program_a/
-https://discourse.ardour.org/t/light-weight-drumkits-for-drumgizmo/104212
-https://discourse.ardour.org/t/plugins-gui-drumgizmo-specifically/90141
-https://www.facebook.com/drumgizmo/posts/a-new-video-from-me-about-trying-out-the-new-drumgizmo-crocell-kit-on-a-new-proj/1220875614683168/ 
-links to 
-https://www.youtube.com/watch?v=hXDCTmcBmLg (Test driving the Drumgizmo Crocell Kit Pt I)
+* https://linuxmusicians.com/viewtopic.php?t=20531 - Template for Ardour and drumgizmo (good)
+* https://musical-artifacts.com/artifacts/662 - Create Drumgizmo Tracks - Lua script - Ardour v3 + midnam
+* https://drumgizmo.org/wiki/doku.php?id=videos#tutorials
+* https://www.reddit.com/r/linuxaudio/comments/bwaza4/piano_rolldrumgizmoardour_how_can_i_program_a/
+* https://discourse.ardour.org/t/light-weight-drumkits-for-drumgizmo/104212
+* https://discourse.ardour.org/t/plugins-gui-drumgizmo-specifically/90141
+* https://www.facebook.com/drumgizmo/posts/a-new-video-from-me-about-trying-out-the-new-drumgizmo-crocell-kit-on-a-new-proj/1220875614683168/ 
+
+* links to: -
+ 
+* https://www.youtube.com/watch?v=hXDCTmcBmLg (Test driving the Drumgizmo Crocell Kit Pt I)
 
 
 
